@@ -27,5 +27,5 @@ if(eta<18){
 
 let prezzoFinale = prezzoBase - sconto;
 
-console.log("prezoz finale: "+prezzoFinale.toFixed(2));
+console.log("prezzo finale: "+prezzoFinale.toFixed(2));
 
