@@ -1,6 +1,7 @@
 //dichiare costante percentuale sconto u-18
 const percentualeScontoU18 = 20;
 //dichiarare costante percentuale sconto o-65
+const percentualeScontoO65 = 40;
 //chidere a utente numero km con alert
 //salvarlo in una variabile
 //chidere a utente eta con alert
