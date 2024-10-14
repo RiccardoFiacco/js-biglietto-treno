@@ -15,17 +15,14 @@ let prezzoBase = numeroKm * prezzoPerKm;
 let prezzoFinale = 0;
 //inizzializzo la variabile sconto
 let sconto = 0; 
-console.log(sconto);
 //SE eta < 18 
     // sconto = prezzo * percentuale u-18 / 100
 //ALTRIMENTI se eta > 65 
     // sconto = prezzo * percentuale o-65 / 100
 if(eta<18){
     sconto = prezzoBase * percentualeScontoU18 / 100
-    console.log(sconto);
 }else if(eta > 65){
     sconto = prezzoBase * percentualeScontoO65 / 100
-    console.log(sconto);
 }
 
 if(sconto != 0){
