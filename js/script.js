@@ -11,26 +11,21 @@ let numeroKm = parseInt(prompt("inserisci il numero di km percorsi"));
 //salvarlo in una variabile
 let eta = parseInt(prompt("inserisci la tua eta"));
 //calcolare prezzo base biglietto: km * costante 0,21
-let prezzoBase = numeroKm * prezzoPerKm;
-let prezzoFinale = 0;
+const prezzoBase = numeroKm * prezzoPerKm;
 //inizzializzo la variabile sconto
 let sconto = 0; 
 //SE eta < 18 
     // sconto = prezzo * percentuale u-18 / 100
 //ALTRIMENTI se eta > 65 
     // sconto = prezzo * percentuale o-65 / 100
+
 if(eta<18){
     sconto = prezzoBase * percentualeScontoU18 / 100
 }else if(eta > 65){
     sconto = prezzoBase * percentualeScontoO65 / 100
 }
 
-if(sconto != 0){
-    prezzoFinale = prezzoBase - sconto;
-}else{
-    prezzoFinale = prezzoBase;
-}
+let prezzoFinale = prezzoBase - sconto;
 
-alert(prezzoFinale.toFixed(2));
+console.log("prezoz finale: "+prezzoFinale.toFixed(2));
 
-//prezzo finale
